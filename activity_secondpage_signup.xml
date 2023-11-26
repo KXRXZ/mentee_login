@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Age:"
+            android:textColor="@color/white"
+            android:orientation="vertical"/>
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textSize="12sp"
+            android:textColorHint="#DADADA"
+            android:layout_below="@id/textViewAge"
+            android:backgroundTint="@android:color/white"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Course"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_border">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                tools:ignore="TouchTargetSizeCheck" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/textViewInterests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="20dp"
+            android:text="Which topics are you interested in?"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"/>
+
+        <CheckBox
+            android:id="@+id/ComputerScience"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="ComputerScience"
+            android:onClick="Check" />
+        <CheckBox
+            android:id="@+id/Psychology"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychology"
+            android:onClick="Check" />
+        <CheckBox
+            android:id="@+id/Arts"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arts"
+            android:onClick="Check" />
+        <CheckBox
+            android:id="@+id/TourismManagement"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TourismManagement"
+            android:onClick="Check" />
+        <CheckBox
+            android:id="@+id/Culinary"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Culinary"
+            android:onClick="Check" />
+        <CheckBox
+            android:id="@+id/CreativeWriting"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CreativeWriting"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btnCreateAccountMentor"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/CreativeWriting"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_rounded_corners"
+            android:onClick="onCreateAccountMentorButtonClick"
+            android:text="Create My Account"
+            android:textColor="#DADADA"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
